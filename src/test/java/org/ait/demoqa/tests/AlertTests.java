@@ -54,7 +54,7 @@ public class AlertTests extends TestBase{
         new AlertsPage(driver).clickOnPromptButton()
                 .enterMessageToAlert("Hello Irina")
                 .acceptAlert()
-                .verifyResult("You entered Hello Irina");
+                .verifyPromptResult("You entered Hello Irina");
 
     }
 

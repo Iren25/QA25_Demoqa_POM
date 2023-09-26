@@ -89,4 +89,12 @@ public class AlertsPage extends BasePage{
         }
         return this;
     }
+
+    @FindBy(xpath = "//span[@id='promptResult']")
+    WebElement promptResult;
+
+    public AlertsPage verifyPromptResult(String message) {
+        Assert.assertTrue(shouldHaveText(promptResult,message,5));
+        return this;
+    }
 }
