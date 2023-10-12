@@ -57,7 +57,6 @@ public abstract class BasePage {
     }
 
     public boolean isTextPresent(WebElement element, String book) {
-
         return element.getText().contains(book);
     }
 
